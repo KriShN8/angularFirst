@@ -1,0 +1,735 @@
+<div class="container my-4 ">
+  <div class="">
+    <div class="my-2 ">
+      <h2>fruits</h2>
+
+
+      <ul class="list-group " *ngFor="let fruit of fruits">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+
+      </ul>
+
+    </div>
+    <div class="my-2">
+      <h2>colors</h2>
+
+
+      <ul class="list-group " *ngFor="let fruit of colors">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+
+      </ul>
+
+    </div>
+    <div class="my-2">
+      <h2>numbers</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of numbers">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>scores</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of scores">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>cities</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of cities">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>skills</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of skills">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>roles</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of roles">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>alerts</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of alerts">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>statuses</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of statuses">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>languages</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of languages">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>countries</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of countries">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>hobbies</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of hobbies">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>courses1</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of courses1">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>months</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of months">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+    <div class="my-2">
+      <h2>events1</h2>
+    
+    
+      <ul class="list-group " *ngFor="let fruit of events1">
+        <li class="list-group-item my-1">{{ fruit }}</li>
+    
+      </ul>
+    
+    </div>
+  </div>
+
+
+  <!-- Array tables  -->
+
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Name</th>
+      <th>Age</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let std of students1; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.name }}</td>
+        <td>{{ std.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Id</th>
+      <th>Name</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let std of products2; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.id }}</td>
+        <td>{{ std.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Id</th>
+      <th>Username</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let std of users; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.id }}</td>
+        <td>{{ std.username }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Task</th>
+      <th>Completed</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let std of tasks; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.task }}</td>
+        <td>{{ std.completed }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Title</th>
+      <th>Author</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let std of books1; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.title }}</td>
+        <td>{{ std.author }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Id</th>
+      <th>title</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let std of posts; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.id }}</td>
+        <td>{{ std.title }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Name</th>
+      <th>Dept</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let emp of employees1; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.dept }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>OrderId</th>
+      <th>item</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let std of orders1; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.orderId }}</td>
+        <td>{{ std.item }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>flightNo</th>
+      <th>Destinatio</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let fig of flights1; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ fig.flightNo }}</td>
+        <td>{{ fig.destination }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Category</th>
+      <th>Amount</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let exp of expenses1; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ exp.category }}</td>
+        <td>{{ exp.amount }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Products</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let exp of orders; let i = index">
+        <td>{{ exp.orderId }}</td>
+        <table class="table table-bordered">
+          <thead>
+            <th>name</th>
+            <th>qty</th>
+          </thead>
+  
+          <tbody>
+            <tr *ngFor="let exp1 of exp.products ; let i = index">
+              <td>{{ exp1.name }}</td>
+              <td>{{ exp1.qty }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>Name</th>
+      <th>subcategories</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let exp of categories; let i = index">
+        <td>{{ exp.id }}</td>
+        <td>{{exp.name}}</td>
+        <td>{{exp.subcategories}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <table class="table table-bordered">
+    <thead>
+      <th>Sr</th>
+      <th>id</th>
+      <th>day</th>
+      <th>activities</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let exp of workoutPlans; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{ exp.id }}</td>
+        <td>{{exp.day}}</td>
+        <td>{{exp.activities}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <!-- students -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">subjects</th>
+        <th scope="col">grades</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let std of students">
+        <td>{{std.id}}</td>
+        <td>{{std.name}}</td>
+        <td>
+          <table class="table table-bordered">
+            <thead>
+              <!-- <tr>
+            <th scope="col">subjects</th>
+          </tr> -->
+            </thead>
+            <tbody>
+              <tr *ngFor="let std1 of std.subjects">
+                <td>{{std1}}</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table class="table table-bordered">
+            <thead>
+              <!-- <tr>
+                <th scope="col">grades</th>
+              </tr> -->
+            </thead>
+            <tbody>
+              <tr *ngFor="let grd of std.grades">
+                <td>{{grd}}</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- restaurants -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Menus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let res of restaurants">
+        <td>{{res.id}}</td>
+        <td>{{res.name}}</td>
+        <td>{{res.menus}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- departments -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">department</th>
+
+        <th scope="col">manager</th>
+        <th scope="col">employees</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dep of departments">
+        <td>{{dep.id}}</td>
+        <td>{{dep.department}}</td>
+        <td>{{dep.manager}}</td>
+        <td>{{dep.employees}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- transactions -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">amount</th>
+
+        <th scope="col">date</th>
+        <th scope="col">status</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let trs of transactions">
+        <td>{{trs.id}}</td>
+        <td>{{trs.amount}}</td>
+        <td>{{trs.date}}</td>
+        <td>{{trs.status}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- courses -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">title</th>
+
+        <th scope="col">instructor</th>
+        <th scope="col">hours</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cur of courses">
+        <td>{{cur.id}}</td>
+        <td>{{cur.title}}</td>
+        <td>{{cur.instructor}}</td>
+        <td>{{cur.hours}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- suppliers -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+
+        <th scope="col">location</th>
+        <th scope="col">rating</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sup of suppliers">
+        <td>{{sup.id}}</td>
+        <td>{{sup.name}}</td>
+        <td>{{sup.location}}</td>
+        <td>{{sup.rating}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- pets -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+
+        <th scope="col">species</th>
+        <th scope="col">age</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pet of pets">
+        <td>{{pet.id}}</td>
+        <td>{{pet.name}}</td>
+        <td>{{pet.species}}</td>
+        <td>{{pet.age}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+  <!-- flights -->
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">from</th>
+
+        <th scope="col">to</th>
+        <th scope="col">duration</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let flight of flights">
+        <td>{{flight.id}}</td>
+        <td>{{flight.from}}</td>
+        <td>{{flight.to}}</td>
+        <td>{{flight.duration}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- products -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+
+        <th scope="col">category</th>
+        <th scope="col">price</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.category}}</td>
+        <td>{{product.price}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- employees -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+
+        <th scope="col">department</th>
+        <th scope="col">experience</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employe of employees">
+        <td>{{employe.id}}</td>
+        <td>{{employe.name}}</td>
+        <td>{{employe.department}}</td>
+        <td>{{employe.experience}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- books -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">title</th>
+
+        <th scope="col">author</th>
+        <th scope="col">genre</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{book.id}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.genre}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <!-- movies -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">title</th>
+
+        <th scope="col">rating</th>
+        <th scope="col">duration</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>{{movie.id}}</td>
+        <td>{{movie.title}}</td>
+        <td>{{movie.rating}}</td>
+        <td>{{movie.duration}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+
+  <!-- clients -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+
+        <th scope="col">phone</th>
+        <th scope="col">company</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td>{{client.id}}</td>
+        <td>{{client.name}}</td>
+        <td>{{client.phone}}</td>
+        <td>{{client.company}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+
+</div>
+
+
+
+
+
+<!-- using li  -->
+
+<!-- <div *ngFor="let restaurant of restaurants">
+    <h2>{{ restaurant.name }}</h2>
+    <ul>
+      <li *ngFor="let menu of restaurant.menus">{{ menu }}</li>
+    </ul>
+    </div> -->
